@@ -6,8 +6,8 @@ import json
 app = Flask(__name__)
 
 # مفاتيح Binance - لازم تكون متضيفة في Environment Variables على Railway
-API_KEY = os.getenv("ZVZ1khUdE8Bb22OihiJuW92oz79uhMlfOPwaclUXRfLoWwL88aJ0d8mWjGLJijkK")
-API_SECRET = os.getenv("HyVufwNGqD2rUfZaEPyv59IeTndOsFvNIKDbuP0Wl7VX4K77xcZEjf1KVqBEGwCc")
+API_KEY = os.getenv("API_KEY")
+API_SECRET = os.getenv("API_SECRET")
 
 # إنشاء عميل Binance
 client = Client(API_KEY, API_SECRET)
